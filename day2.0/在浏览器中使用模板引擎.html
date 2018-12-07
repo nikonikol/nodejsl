@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="lib/template-web.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+   
+    <script type="text/template" id="tp">
+        hello{{ name }}
+    </script>
+    
+    <script>
+         var ret =template('tp',{
+             name: 'jack'
+            })
+            
+            console.log(ret)
+                </script>
+</body>
+</html>

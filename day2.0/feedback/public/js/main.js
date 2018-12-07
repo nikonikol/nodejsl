@@ -1,0 +1,1 @@
+window.alert('歪歪大傻逼')

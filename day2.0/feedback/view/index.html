@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <script src="/public/lib/bootstrap.js"></script>  -->
+    <link rel="stylesheet" href="/public/css/bootstrap.css">
+
+    <script src="/public/lib/bootstrap.js"></script>
+    <script src="/public/lib/jquery-3.3.1.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+            <table class="table table-hover table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>评论</th>
+                            <th>时间</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{each mycomments}}
+                        <tr>
+                            <td>{{$value.name}}说:{{$value.message}}<span class="badge badge-danger">4</span></td>
+                            <td><span class="">{{$value.datetime}}</span></td>
+                        </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+    </div>
+    <a href="/post">提交</a>
+    <button href='/post'>提交</button>
+    <script src="/public/js/main.js"></script>
+    <img src="/public/img/023bc2fdfc03924500b4fd708a94a4c27c1e2545.jpg" alt="">
+</body>
+</html>
