@@ -1,0 +1,13 @@
+{
+    "students":[
+        {"id":1, "name":"张三","gender":0,"age":18,"hobbies":"吃饭、睡觉、打豆豆"},
+        {"id":2, "name":"张四","gender":0,"age":18,"hobbies":"吃饭、睡觉、打豆豆"},
+        {"id":3, "name":"里屋","gender":0,"age":18,"hobbies":"吃饭、睡觉、打豆豆"},
+        {"id":4, "name":"王六","gender":0,"age":18,"hobbies":"吃饭、睡觉、打豆豆"},
+        {"id":5, "name":"六七","gender":0,"age":18,"hobbies":"吃饭、睡觉、打豆豆"},
+        {"id":6, "name":"王麻子","gender":0,"age":18,"hobbies":"吃饭、睡觉、打豆豆"},
+        {"id":7, "name":"李明外","gender":0,"age":18,"hobbies":"吃饭、睡觉、打豆豆"},
+        {"id":8, "name":"黎明二","gender":0,"age":18,"hobbies":"吃饭、睡觉、打豆豆"},
+        {"id":9, "name":"阿斯普皇帝","gender":0,"age":18,"hobbies":"吃饭、睡觉、打豆豆"}
+    ]
+}
