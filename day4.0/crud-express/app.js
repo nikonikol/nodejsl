@@ -16,9 +16,20 @@ app.get('/', function(req,res){
         }
 
         res.render('index.html',{
+            pictures: JSON.parse(data).pictures,
             students: JSON.parse(data).students
         })
     })
+    
+})
+app.get('/chart', function(req,res){
+    //readFile 的第二个可选参数，传入utm8 即可不用tostring()
+    res.render('mychart.html')
+    
+})
+app.get('/login', function(req,res){
+    //readFile 的第二个可选参数，传入utm8 即可不用tostring()
+    res.render('login.html')
     
 })
 

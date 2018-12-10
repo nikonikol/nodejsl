@@ -9,5 +9,12 @@
         {"id":7, "name":"李明外","gender":0,"age":18,"hobbies":"吃饭、睡觉、打豆豆"},
         {"id":8, "name":"黎明二","gender":0,"age":18,"hobbies":"吃饭、睡觉、打豆豆"},
         {"id":9, "name":"阿斯普皇帝","gender":0,"age":18,"hobbies":"吃饭、睡觉、打豆豆"}
+    ],
+    "pictures":[
+        {"id":1,"title":"风景图","url":"./public/img/1.jpg"},
+        {"id":1,"title":"风景图","url":"./public/img/2.jpg"},
+        {"id":1,"title":"风景图","url":"./public/img/3.jpg"},
+        {"id":1,"title":"风景图","url":"./public/img/4.jpg"}
     ]
+
 }
