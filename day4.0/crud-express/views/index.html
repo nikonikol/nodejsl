@@ -23,13 +23,12 @@
 
 
 
-<<<<<<< HEAD
       <div class="container">
           <div class="row">
               <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
     
               <h1 class="page-header">学生管理系统</h1>
-              <a href="" class="btn btn-info">添加</a>
+              <a href="/students/new" class="btn btn-info">添加</a>
               
               <div class="row placeholders">
                  {{each imgs}}
@@ -51,6 +50,7 @@
                       <th>性别</th>
                       <th>年龄</th>
                       <th>爱好</th>
+                      <th>操作</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -61,56 +61,16 @@
                       <td>{{$value.gender}}</td>
                       <td>{{$value.age}}</td>
                       <td>{{$value.hobbies}}</td>
+                      <td>
+                          <a href="/students/edit?id={{$value.id}}">更新</a>
+                          <a href="/students/delete?id={{$value.id}}">删除</a>
+                        </td>
                     </tr>           
                     {{/each}}    
                   </tbody>
                 </table>
               </div>
             </div>
-=======
-    <div class="container">
-      <div class="row">
-          <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-
-          <h1 class="page-header">学生管理系统</h1>
-          <a href="" class="btn btn-info">添加</a>
-          <div class="row placeholders">
-            {{each pictures}}
-            <div class="col-xs-6 col-sm-3 placeholder">
-
-              <img src="{{$value.url}}" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
-              <h4>{{$value.title}}</h4>
-              <span class="text-muted">Something else</span>
-
-            </div>
-            {{/each}}
-          </div>
-
-          <h2 class="sub-header">Section title</h2>
-          <div class="table-responsive">
-            <table class="table table-striped">
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>姓名</th>
-                  <th>性别</th>
-                  <th>年龄</th>
-                  <th>爱好</th>
-                </tr>
-              </thead>
-              <tbody>
-                  {{each students }}
-                <tr>
-                  <td>{{$value.id}}</td>
-                  <td>{{$value.name}}</td>
-                  <td>{{$value.gender}}</td>
-                  <td>{{$value.age}}</td>
-                  <td>{{$value.hobbies}}</td>
-                </tr>           
-                {{/each}}    
-              </tbody>
-            </table>
->>>>>>> 6a2a0dae6f5ad9805463f9cfd834d69e0fcb8a9e
           </div>
         </div>
 
