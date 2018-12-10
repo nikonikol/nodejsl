@@ -14,14 +14,14 @@ app.get('/', function(req,res){
         if(err){
             return res.status(500).send('Server error')
         }
-
         res.render('index.html',{
-            students: JSON.parse(data).students
+            students: JSON.parse(data).students,
+            imgs:JSON.parse(data).imgs
         })
     })
     
 })
 
 app.listen(3000,function(){
-    console.log('歪歪真帅')
+    console.log('go````')
 })

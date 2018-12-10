@@ -10,4 +10,11 @@
         {"id":8, "name":"黎明二","gender":0,"age":18,"hobbies":"吃饭、睡觉、打豆豆"},
         {"id":9, "name":"阿斯普皇帝","gender":0,"age":18,"hobbies":"吃饭、睡觉、打豆豆"}
     ]
+    ,
+    "imgs":[
+        {"id":1,"a":"/public/img/image_1x.jpg"},
+        {"id":2,"a":"/public/img/image_3x.jpg"},
+        {"id":3,"a":"/public/img/image_2x.jpg"}
+        
+    ]
 }
