@@ -88,23 +88,20 @@ exports.updateById = function (student,callback) {
  */
 exports.delete = function (id,callback) {
 
-    fs.readFile(dbpath,'utf8',function(err,data){
-        if(err)
-        {
-            return callback(err)
-        }
+    
         fs.readFile(dbpath,'utf8',function(err,data){
             if(err)
             {
                 return callback(err)
             }
+
             var stus=JSON.parse(data).students
-    
-            var studentedit=stus.find(function(item){
+           
+            var deleteiid=stus.findIndex(function(item){
                 return item.id===parseInt(id)
             })
-            
-            studentedit=""
+
+            stus.splice(deleteiid,1)
 
             var fileData=JSON.stringify({
                 students:stus
@@ -118,27 +115,9 @@ exports.delete = function (id,callback) {
                 callback(null)
             })
         })
+       
 
-
-
-
-
-
-
-        var students=JSON.parse(data).students
-        students.forEach(student => {
-            console.log(id)
-            console.log(student.id)
-            if(student.id!==parseInt(id))
-            {
-               students=''
-            }
-            
-        }); 
-        
-        return callback(null)
-
-    })
+   
 }
 
 /**

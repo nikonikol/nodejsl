@@ -91,13 +91,11 @@ router.get('/students/delete', function(req,res){
         {
             return res.status(500).send('Server error')
         }
-       // res.render('index.html')
+        res.redirect('/students')
     })   
     
    
 })
-router.post('/students/delete', function(req,res){
-    
-})
+
 //把router导出
 module.exports=router
